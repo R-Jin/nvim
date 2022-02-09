@@ -69,3 +69,7 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- Telescope
 keymap("n", "<leader>f", "<cmd>Telescope find_files theme=dropdown<cr>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+
+-- GitSigns
+keymap("n", "<leader>gl", "<cmd>Gitsigns preview_hunk<cr>", opts)
+keymap("n", "<leader>gt", "<cmd>Gitsign blame_line<cr>", opts)
