@@ -91,7 +91,17 @@ return packer.startup(function(use)
   use "nvim-lualine/lualine.nvim"
 
   -- Tmux Navigator
-  use "christoomey/vim-tmux-navigator"
+  use {
+        'christoomey/vim-tmux-navigator',
+        config = function()
+          vim.g.tmux_navigator_no_mappings = 1
+
+          vim.api.nvim_set_keymap('n', '<c-h>', ':TmuxNavigateLeft<CR>',  {noremap = true, silent = true})
+          vim.api.nvim_set_keymap('n', '<c-j>', ':TmuxNavigateDown<CR>',  {noremap = true, silent = true})
+          vim.api.nvim_set_keymap('n', '<c-k>', ':TmuxNavigateUp<CR>',    {noremap = true, silent = true})
+          vim.api.nvim_set_keymap('n', '<c-l>', ':TmuxNavigateRight<CR>', {noremap = true, silent = true})
+        end
+      }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
