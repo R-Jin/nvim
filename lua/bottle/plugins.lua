@@ -53,8 +53,8 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim" -- Terminal inside nvim
   use "vimwiki/vimwiki"         -- Vimwiki
 
-  -- Colorschemes
-  use 'folke/tokyonight.nvim'
+  -- nord colorscheme
+  use 'shaunsingh/nord.nvim'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
