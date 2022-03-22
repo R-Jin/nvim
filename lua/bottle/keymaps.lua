@@ -42,6 +42,9 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<leader>d", ":Bdelete<cr>", opts)
 
+-- Markdown preview
+keymap("n", "<leader>p", ":Glow<CR>", opts)
+
 -- Visual --
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
