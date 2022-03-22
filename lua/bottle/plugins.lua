@@ -51,6 +51,7 @@ return packer.startup(function(use)
   use "akinsho/bufferline.nvim" -- Show bufferline
   use "moll/vim-bbye"
   use "akinsho/toggleterm.nvim" -- Terminal inside nvim
+  use "vimwiki/vimwiki"         -- Vimwiki
 
   -- Colorschemes
   use 'folke/tokyonight.nvim'
