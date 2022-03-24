@@ -38,3 +38,7 @@ vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 
 vim.g.vimwiki_list = {{path = '~/notes/EDA343-DatCom-Notes', syntax = 'markdown', ext = '.md'}}           -- vim wiki options
+
+vim.cmd [[
+  au BufRead,BufNewFile *.md setlocal textwidth=80
+]]
