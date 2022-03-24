@@ -53,6 +53,7 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim" -- Terminal inside nvim
   use "vimwiki/vimwiki"         -- Vimwiki
   use "ellisonleao/glow.nvim"   -- Markdown Previewer
+  use "junegunn/goyo.vim"       -- zen mode
 
   -- nord colorscheme
   use 'shaunsingh/nord.nvim'
