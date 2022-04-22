@@ -16,8 +16,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
-vim.cmd [[
-  augroup packer_user_config
+vim.cmd [[ augroup packer_user_config
     autocmd!
     autocmd BufWritePost plugins.lua source <afile> | PackerSync
   augroup end
@@ -54,6 +53,9 @@ return packer.startup(function(use)
   use "vimwiki/vimwiki"         -- Vimwiki
   use "ellisonleao/glow.nvim"   -- Markdown Previewer
   use "junegunn/goyo.vim"       -- zen mode
+  use "norcalli/nvim-colorizer.lua" -- Hex color previewer
+  use "lervag/vimtex"           -- vimtex
+  use "mhinz/vim-startify"      -- startify
 
   -- nord colorscheme
   use 'shaunsingh/nord.nvim'

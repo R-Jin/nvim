@@ -1,6 +1,6 @@
 local configs = require("nvim-treesitter.configs")
 configs.setup {
-  ensure_installed = "maintained",
+  ensure_installed = "all",
   sync_install = false,
   ignore_install = { "" }, -- List of parsers to ignore installing
   autopairs = {
@@ -12,7 +12,7 @@ configs.setup {
     additional_vim_regex_highlighting = true,
 
   },
-  indent = { enable = true, disable = { "yaml" } },
+  indent = { enable = true, disable = { "yaml", "cpp", "c"} },
 
   -- ts-rainbow settings
   rainbow = {
